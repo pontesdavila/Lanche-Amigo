@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+
+
+  <title>Lanche Amigo</title>
+</head>
+<body>
+
+  <!-- ÁREA DOS ÍCONES DAS REDES SOCIAIS -->
+  <div class="gradient-background">
+    <div class="container">
+      <div class="outer-container">
+        
+        <!-- ÁREA DOS ÍCONES DAS REDES SOCIAIS -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/d%C3%A1vila-pontes-%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88-7143268b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/pontesdavila?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/pontesdavila/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:pontes.davila@gmail.com?subject=Fale%20Conosco"><i class="far fa-envelope"></i></a>
+          <a href="https://wa.me/5521982236863" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <!-- Cardápio da Lanchonete Lanche Amigo -->
+    
+        <div class="menu-container">
+            <h1>Lanche Amigo</h1>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="cachorroQuenteQtde">Cachorro Quente</br> (R$10,00) </label>
+                    <input type="number" id="cachorroQuenteQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/cachorroQuente.png" alt="Cachorro Quente">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="burguerSimplesQtde">Burguer Simples</br> (R$12,00) </label>
+                    <input type="number" id="burguerSimplesQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/burguerSimples.png" alt="burguerSimples">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="XQueijoQtde">X Queijo</br> (R$12,00) </label>
+                    <input type="number" id="XQueijoQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/XQueijo.png" alt="XQueijo">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="burguerOnionQtde"> Burguer Onion</br> (R$12,00) </label>
+                    <input type="number" id="burguerOnionQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/burguerOnion.png" alt="Burguer Onion">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="XeggQtde">X Egg </br> (R$12,00) </label>
+                    <input type="number" id="XeggQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/Xegg.png" alt="Refrigerante">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="BurguerVegQtde">Burguer Vegetariano </br>(R$15,00)</label>
+                    <input type="number" id="BurguerVegQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/BurguerVeg.png" alt="BurguerVeg">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="tortaChocolateQtde">Torta de Chocolate - pedaço </br>(R$12,00):</label>
+                    <input type="number" id="tortaChocolateQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/tortaChocolate.png" alt="Refrigerante">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="tortaLimaoQtde">Torta de Limão - pedaço</br> (R$12,00):</label>
+                    <input type="number" id="tortaLimaoQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/tortaLimao.png" alt="Refrigerante">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="pudimQtde"> Mini pudim </br>(R$10,00)</label>
+                    <input type="number" id="pudimQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/pudim.png" alt="Refrigerante">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="cocacolaQtde">Coca-cola </br>(R$7,00)</label>
+                    <input type="number" id="cocacolaQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/cocacola.png" alt="cocacola">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <label for="sucoQtde">Sucos </br>(R$9,00)</label>
+                    <input type="number" id="sucoQtde" placeholder="Quantidade" />
+                </div>
+                <img src="./imagens/suco.png" alt="suco">
+            </div>
+
+            <!-- Botão para Calcular o Total -->
+            <button onclick="calcularTotal()">Calcular Preço</button>
+        </div>
+
+        <!-- Div para Exibir os Itens Calculados e o Total -->
+        <div class="order-summary">
+            <h2>Resumo do seu pedido</h2>
+            <div id="resumoPedido"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Desenvolvido por <a href="https://github.com/pontesdavila" target="_blank">Dávila Pontes</a>, no Curso de Programador FrontEnd do Senai (2025) Todos os direitos reservados
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
